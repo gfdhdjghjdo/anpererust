@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMPERE RUST | Тестовый сайт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">AMPERE RUST</div>
+            <nav class="nav">
+                <a href="#" class="nav-link">Главная</a>
+                <a href="#" class="nav-link">О нас</a>
+                <a href="#" class="nav-link">Контакты</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h1 class="hero-title">Добро пожаловать на AMPERE RUST</h1>
+                <p class="hero-subtitle">Лучший Rust сервер с уникальными китами и событиями</p>
+                <button class="hero-btn" id="connectBtn">Подключиться к серверу</button>
+            </section>
+
+            <section class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">🔥</div>
+                    <h3 class="feature-title">Увеличенные рейты</h3>
+                    <p class="feature-desc">Добыча ресурсов x500, лут с учёных x500</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎁</div>
+                    <h3 class="feature-title">Ежедневные киты</h3>
+                    <p class="feature-desc">Получай ресурсы и оружие каждый день</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3 class="feature-title">Активное сообщество</h3>
+                    <p class="feature-desc">Более 100 игроков онлайн каждый день</p>
+                </div>
+            </section>
+
+            <section class="info">
+                <div class="info-box">
+                    <h3>IP сервера:</h3>
+                    <p class="server-ip">play.ampererust.ru:28015</p>
+                    <button class="copy-btn" data-copy="play.ampererust.ru:28015">Копировать IP</button>
+                </div>
+                <div class="info-box">
+                    <h3>Наш Discord:</h3>
+                    <p class="discord-link">https://discord.gg/ampererust</p>
+                    <button class="copy-btn" data-copy="https://discord.gg/ampererust">Копировать ссылку</button>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>© 2024 AMPERE RUST. Все права защищены.</p>
+        </footer>
+    </div>
+
+    <div class="modal" id="connectModal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Подключение к серверу</h2>
+            <p>Скопируйте IP и подключитесь через консоль Rust:</p>
+            <div class="modal-ip">play.ampererust.ru:28015</div>
+            <button class="copy-modal-btn" data-copy="play.ampererust.ru:28015">Копировать IP</button>
+            <p class="modal-hint">В консоли нажмите F1 и введите: client.connect play.ampererust.ru:28015</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
